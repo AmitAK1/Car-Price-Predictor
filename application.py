@@ -2,6 +2,10 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
+from sklearn.pipeline import make_pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import OneHotEncoder
 
 # --- 1. Load Data and Model ---
 # The loading process remains the same as your Flask app.
